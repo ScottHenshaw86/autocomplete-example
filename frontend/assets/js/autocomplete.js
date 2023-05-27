@@ -9,7 +9,8 @@ const getMatches = (query) => {
         return;
     }
 
-    const baseURL = "http://localhost/sites/autocomplete/backend/cities_api.php";
+    // const baseURL = "http://localhost/sites/autocomplete/backend/cities_api.php";
+    const baseURL = "https://scotthenshaw86.github.io/autocomplete-example/backend/cities_api.php";
     const xhr = new XMLHttpRequest();
     xhr.open("GET", `${baseURL}?query=${query}`);
     xhr.addEventListener("load", (e) => {
